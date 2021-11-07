@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: black;
+  background-color: #f6f6fe;
+  background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 0rem right 0rem, bottom -4.6rem left 0rem;
+  box-sizing: border-box;
+}
+
+
+.annual-Price .flex-container div .monthly-price {
+  display: none !important;
+}
+
+.annual-Price .flex-container div .annual-price {
+  display: flex !important;
+}
+
+.annual-Price .flex-container div .pro-monthly-price {
+  display: none !important;
+}
+
+.annual-Price .flex-container div .pro-annual-price {
+  display: flex !important;
+}
+
+div .annual-price {
+ display: none !important;
+}
+
+div .pro-annual-price {
+ display: none !important;
+}
+
+header {
+  padding: 50px 20px 0 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex div {
+  color: #b3b5c6;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 1000;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-weight: 900;
+}
+
+section {
+  padding: 0 60px;
+  margin-top: 47px;
+  max-width: 1052px;
+  margin: 0 auto;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-container div {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.flex-container div ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 1.5rem ;
+  margin-bottom: 2rem ;
+}
+
+.flex-container div ul li {
+  padding: 17px;
+  border-top: 0.5px solid rgba(214, 214, 214, 0.8);
+  text-align: center;
+}
+
+
+ div .price {
+  font-size: 72px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  font-weight: 700;
+  align-items: center;
+}
+
+ .dollar-sign {
+  font-size: 39px;
+
+}
+
+ .box1,  .box3 {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+ .box1,.box2,.box3 {
+  background-color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: black;
+}
+
+ ul {
+  color: #6d708d;
+}
+
+li {
+  border-bottom: 0.5px solid rgba(214, 214, 214, 0.8);
+}
+
+button{
+  background: linear-gradient(to right, #a3a8f0, #696fdd) no-repeat;
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: transparent;
+  border: 1px solid #6d708d;
+  color: #6d708d;
+}
+
+.box2 {
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  color: #fff !important;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+ .box2 ul {
+  color: white;
+}
+
+ .box2 ul li {
+  padding: 17px;
+  border-top: 0.5px solid rgba(214, 214, 214, 0.541);
+}
+
+.box2 button {
+  background: #f6f6fe;
+  border: 1px solid #f6f6fe;
+  color: #6d708d;
+}
+
+.box2 button:hover {
+  background: transparent;
+  border: 1px solid #f6f6fe;
+  color: #f6f6fe;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  height: 35px;
+  margin: 18px 23px;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  transition: 0s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 38px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+input + .slider:hover {
+  background: #a3a8f0;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url(../images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-position: top -2.2rem right -12rem;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
